@@ -1,0 +1,2 @@
+# List files in long format in the current directory
+ls -l
