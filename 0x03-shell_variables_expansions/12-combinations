@@ -1,0 +1,8 @@
+#!/bin/bash
+for first_letter in {a..z}; do
+    for second_letter in {a..z}; do
+        if [ "$first_letter$second_letter" != "oo" ]; then
+            echo "$first_letter$second_letter"
+        fi
+    done
+done

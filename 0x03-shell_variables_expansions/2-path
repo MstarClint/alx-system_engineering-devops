@@ -1,0 +1,4 @@
+#!/bin/bash
+if [[ ":$PATH:" != *":/action:"* ]]; then
+  PATH="$PATH:/action"
+fi

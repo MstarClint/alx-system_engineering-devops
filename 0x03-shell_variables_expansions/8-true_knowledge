@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -n "$TRUEKNOWLEDGE" ]; then
+    result=$((128 + $TRUEKNOWLEDGE))
+    echo "$result"
+else
+    echo "TRUEKNOWLEDGE environment variable is not set."
+fi

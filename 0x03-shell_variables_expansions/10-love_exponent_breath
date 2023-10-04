@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -n "$BREATH" ] && [ -n "$LOVE" ]; then
+    result=$((BREATH ** LOVE))
+    echo "$result"
+else
+    echo "BREATH or LOVE environment variable is not set."
+fi
