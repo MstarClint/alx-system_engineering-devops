@@ -1,7 +1,2 @@
 #!/bin/bash
-if [ -n "$POWER" ] && [ -n "$DIVIDE" ]; then
-    result=$((POWER / DIVIDE))
-    echo "$result"
-else
-    echo "POWER or DIVIDE environment variable is not set."
-fi
+[ -n "$POWER" ] && [ -n "$DIVIDE" ] && result=$((POWER / DIVIDE)) && echo "$result" || echo "POWER or DIVIDE environment variable is not set.

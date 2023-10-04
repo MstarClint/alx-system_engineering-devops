@@ -1,7 +1,2 @@
 #!/bin/bash
-if [ -n "$TRUEKNOWLEDGE" ]; then
-    result=$((128 + $TRUEKNOWLEDGE))
-    echo "$result"
-else
-    echo "TRUEKNOWLEDGE environment variable is not set."
-fi
+[ -n "$TRUEKNOWLEDGE" ] && result=$((128 + $TRUEKNOWLEDGE)) && echo "$result" || echo "TRUEKNOWLEDGE environment variable is not set."
