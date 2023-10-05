@@ -1,2 +1,2 @@
 #!/bin/bash
-set | while read line; do echo $line; done
+set | while read line do echo $line done
