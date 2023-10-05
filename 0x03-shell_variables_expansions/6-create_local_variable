@@ -1,2 +1,2 @@
 #!/bin/bash
-BEST="School"; echo "Local variable BEST has been set to '$BEST'"
+BEST="School"
