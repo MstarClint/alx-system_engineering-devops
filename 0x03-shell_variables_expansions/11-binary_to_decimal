@@ -1,2 +1,2 @@
 #!/bin/bash
-[ -n "$BINARY" ] && decimal=$(echo "ibase=2; $BINARY" | bc) && echo "$decimal" || echo "BINARY environment variable is not set."
+result=$((2#$BINARY)); echo $result
