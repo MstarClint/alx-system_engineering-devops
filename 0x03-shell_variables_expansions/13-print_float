@@ -1,2 +1,2 @@
 #!/bin/bash
-for first_letter in {a..z}; do for second_letter in {a..z}; do [ "$first_letter$second_letter" != "oo" ] && echo "$first_letter$second_letter"; done; done
+printf "%.2f\n" $NUM
