@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | tr ':' '\n' | wc -l
+IFS=':' read -ra path_elements <<< "$PATH" count="${#path_elements[@]}"
