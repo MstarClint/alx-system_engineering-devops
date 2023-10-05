@@ -1,2 +1,2 @@
 #!/bin/bash
-set
+declare -p | sed -n -e '/declare -[aA]/s/declare -/Local: /p' -e '/declare -[fxn]/s/declare -/Function: /p' && env | cut -d= -f1 | sed 's/^/Environment: /'
