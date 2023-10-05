@@ -1,2 +1,2 @@
 #!/bin/bash
-[ -n "$BREATH" ] && [ -n "$LOVE" ] && result=$((BREATH ** LOVE)) && echo "$result" || echo "BREATH or LOVE environment variable is not set."
+result=$(($BREATH ** $LOVE)) echo $result
