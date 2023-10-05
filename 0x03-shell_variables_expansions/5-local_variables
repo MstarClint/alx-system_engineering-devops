@@ -1,2 +1,2 @@
 #!/bin/bash
-(set -o posix; set | grep -E '^[a-zA-Z_][a-zA-Z_0-9]*='; env; declare -F | awk '{print $3}')
+(echo "Local Variables:" set -o posix; set | grep -E '^[a-zA-Z_][a-zA-Z_0-9]*=' echo "Environment Variables:" env echo "Functions:" declare -F | awk '{print $3}')
