@@ -1,0 +1,2 @@
+#!/bin/bash
+while read word do count=$(grep -c "$word") if [ "$count" -eq 1 ] then echo "$word" fi done | sort
