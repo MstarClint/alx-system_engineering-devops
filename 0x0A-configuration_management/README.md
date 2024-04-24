@@ -1,1 +1,1 @@
-Web server
+Configuration management
